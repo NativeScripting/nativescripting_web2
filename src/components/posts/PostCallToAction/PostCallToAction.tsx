@@ -28,12 +28,6 @@ function getBtnClassName(type: ActionBtnType, clear: boolean) {
 const PostCallToAction = (props: ActionButtonProps) => {
     const className = getBtnClassName('secondary', false);
 
-    // const signUpUrl = 'https://sso.teachable.com/secure/89912/users/sign_up?after_success_url=%2Fsecure%2F89912%2Fcheckout%2F306840%2Fnativescript-core-getting-started-guide';
-
-    const signUpUrl = 'https://sso.teachable.com/secure/89912/users/sign_up?flow_school_id=89912';
-
-    // const signUpUrl = 'https://sso.teachable.com/secure/89912/users/sign_up?reset_purchase_session=1';
-
     return (
 
         <div className="post-cta-wrapper">

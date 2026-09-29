@@ -2,6 +2,7 @@ import * as React from 'react';
 import { Link } from 'gatsby';
 import styled from 'styled-components';
 
+import { DOWNLOADS_URL } from '../../../utils/downloads';
 const Container = styled.div`
   display: flex;
   justify-content: flex-end;
@@ -38,7 +39,7 @@ function SiteHeaderLinks(props: SiteHeaderLinksProps) {
       <LinkWrapper>
         <a
           href={
-            'https://sso.teachable.com/secure/89912/users/sign_in?reset_purchase_session=1'
+            DOWNLOADS_URL
           }
           className="sign"
         >

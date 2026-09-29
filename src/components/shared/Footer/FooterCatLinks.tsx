@@ -6,6 +6,7 @@ import { colors } from '../../../global/colors';
 import { GridRow } from '../../../layouts/grid2/grid-row';
 import { GridColumn } from '../../../layouts/grid2/grid-column';
 
+import { DOWNLOADS_URL } from '../../../utils/downloads';
 interface FooterCatLinksProps {
   style?: React.CSSProperties;
 }
@@ -62,7 +63,7 @@ export const FooterCatLinks = (
           <FooterLink href="/posts">Articles</FooterLink>
           <FooterLink href="/faq">FAQ</FooterLink>
 
-          <FooterLink href="https://sso.teachable.com/secure/89912/users/sign_in?reset_purchase_session=1">
+          <FooterLink href={DOWNLOADS_URL}>
             Login
           </FooterLink>
         </div>
