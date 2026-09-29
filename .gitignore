@@ -64,7 +64,8 @@ public
 yarn-error.log
 *_old
 
-package-lock.json
+# package-lock.json is committed: without it every build resolves newer
+# packages, and the 2023 dependency set no longer builds on its own.
 
 .DS_Store
 

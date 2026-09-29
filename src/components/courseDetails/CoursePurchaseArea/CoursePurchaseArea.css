@@ -5,3 +5,18 @@
 .course-purchase-area-options {
   background-color: #073d95;
 }
+
+.course-download-note {
+  padding: 20px 24px;
+  line-height: 1.6;
+}
+
+.course-download-note p {
+  margin: 0;
+}
+
+.course-download-note .course-download-closed {
+  margin-top: 12px;
+  opacity: 0.75;
+  font-size: 0.9em;
+}

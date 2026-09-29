@@ -170,3 +170,14 @@
         width: 100%;
     }
 }
+
+/* The price/license area had a fixed 160px height; the note needs far less. */
+.bundle-bottom.bundle-download-note {
+    height: auto;
+}
+
+.bundle-download-note p {
+    margin: 0;
+    padding: 6px 10px;
+    opacity: 0.85;
+}

@@ -3,6 +3,7 @@ import { Link } from '@reach/router';
 
 import styled from 'styled-components';
 
+import { DOWNLOADS_URL } from '../../../utils/downloads';
 interface HeaderMenuMobileProps {}
 interface HeaderMenuMobileState {
   isOpen: boolean;
@@ -47,7 +48,7 @@ export class HeaderMenuMobile extends React.Component<
             <div className="css-15v91y0">
               <a
                 href={
-                  'https://sso.teachable.com/secure/89912/users/sign_in?reset_purchase_session=1'
+                  DOWNLOADS_URL
                 }
                 className="sign"
               >

@@ -11,17 +11,7 @@ interface CurriculumLessonProps {
   courseSlug: string;
 }
 
-function getLessonActionUrl(courseSlug: string, lessonId: string) {
-  return `http://nativescripting.teachable.com/courses/${courseSlug}/lectures/${lessonId}`;
-}
-
 export const CurriculumLesson = (props: CurriculumLessonProps) => {
-  const actionText = props.lesson.isPreview ? 'Preview' : 'Start';
-  const actionLinkClassName = props.lesson.isPreview
-    ? 'lesson-preview-link'
-    : 'lesson-start-link';
-
-  const lessonActionUrl = getLessonActionUrl(props.courseSlug, props.lesson.lessonId);
   const dateOptions: Intl.DateTimeFormatOptions = { year: 'numeric', month: 'short', day: 'numeric' };
   
   const lessonDate = props.chapterPublishScheduleItem
@@ -32,12 +22,10 @@ export const CurriculumLesson = (props: CurriculumLessonProps) => {
       )
     : 'Planned Lesson';
 
+  // Lessons used to link into Teachable's player. The course is now a download,
+  // so published lessons are listed without a link.
   const lessonActionHtml = props.isPublishedChapter ? (
-    <div className="lesson-action-wrapper">
-      <a className={actionLinkClassName} href={lessonActionUrl}>
-        {actionText}
-      </a>
-    </div>
+    <div className="lesson-action-wrapper" />
   ) : (
     <div className="lesson-action-wrapper">
       <span>{lessonDate}</span>

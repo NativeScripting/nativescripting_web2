@@ -1,6 +1,7 @@
 import * as React from 'react';
 import { Link } from 'gatsby';
 
+import { DOWNLOADS_URL } from '../../utils/downloads';
 export function getMenu(className: string) {
   return (
     <div className={className}>
@@ -9,7 +10,7 @@ export function getMenu(className: string) {
       <Link to={'/about'}>Authors</Link>
       <a
         href={
-          'https://sso.teachable.com/secure/89912/users/sign_in?reset_purchase_session=1'
+          DOWNLOADS_URL
         }
         className="sign"
       >
